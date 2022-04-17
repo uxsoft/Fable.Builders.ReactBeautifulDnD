@@ -1,21 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
+        <TargetFramework>net6.0</TargetFramework>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Authors>uxsoft</Authors>
-        <Description>Fable computation expression based bindings for react-beautiful-dnd components</Description>
-        <PackageProjectUrl>https://github.com/uxsoft/Fable.AntDesign</PackageProjectUrl>
+        <Description>Fable computation expression based bindings for react-beautiful-dnd</Description>
+        <PackageProjectUrl>https://github.com/uxsoft/Fable.Builders.ReactBeautifulDnD</PackageProjectUrl>
         <PackageIcon>icon.png</PackageIcon>
-        <RepositoryUrl>https://github.com/uxsoft/Fable.AntDesign</RepositoryUrl>
+        <RepositoryUrl>https://github.com/uxsoft/Fable.Builders.ReactBeautifulDnD</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="Types.fs" />
-        <Compile Include="DragDropContextBuilder.fs" />
-        <Compile Include="DroppableBuilder.fs" />
-        <Compile Include="DraggableBuilder.fs" />
-        <Compile Include="DnD.fs" />
+        <Compile Include="Types.fs"/>
+        <Compile Include="DragDropContextBuilder.fs"/>
+        <Compile Include="DroppableBuilder.fs"/>
+        <Compile Include="DraggableBuilder.fs"/>
+        <Compile Include="DnD.fs"/>
     </ItemGroup>
     <ItemGroup>
         <Content Include="*.fsproj; **\*.fs">
@@ -30,12 +29,8 @@
         </None>
     </ItemGroup>
     <ItemGroup>
-      <PackageReference Include="Fable.Core" Version="3.6.1" />
-      <PackageReference Include="Fable.React" Version="7.4.3" />
+        <PackageReference Include="Fable.Core" Version="3.6.1"/>
+        <PackageReference Include="Fable.React" Version="7.4.3"/>
+        <PackageReference Include="Fable.Builders.React" Version="4.7.0"/>
     </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\src\Fable.Builders.React\Fable.Builders.React.fsproj" />
-    </ItemGroup>
-
 </Project>

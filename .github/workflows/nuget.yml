@@ -25,11 +25,11 @@ jobs:
     - name: Install dependencies
       run: dotnet restore
 
-    - name: Publish NuGet
-      uses: rohith/publish-nuget@v2
-      with:
-        PROJECT_FILE_PATH: ./Fable.Builders.ReactBeautifulDnd.fsproj
-        VERSION_STATIC: 1.${{ github.run_number }}.0
-        TAG_COMMIT: true
-        NUGET_KEY: ${{ secrets.NUGET_KEY }}
-        INCLUDE_SYMBOLS: false
+    - name: Build
+      run: dotnet build
+
+    - name: Pack
+      run: dotnet pack ./Fable.Builders.ReactBeautifulDnD.fsproj -c Release -o .
+
+    - name: Push
+      run: dotnet nuget push *.nupkg -k ${{ secrets.NUGET_KEY }} -s https://api.nuget.org/v3/index.json
