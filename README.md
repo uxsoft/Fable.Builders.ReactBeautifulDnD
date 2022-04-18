@@ -1,5 +1,7 @@
 # Fable.Builders.ReactBeautifulDnD
 
+<img src="https://buildstats.info/nuget/Fable.Builders.ReactBeautifulDnD" alt="badge"/>
+
 ## Getting Started
 
 ```bash
