@@ -2,8 +2,6 @@ namespace Fable.Builders.ReactBeautifulDnD
 
 open System
 open Fable.Builders.Common
-open Fable.Core
-open Fable.React
 open Fable.Core.JsInterop
 open Fable.Builders.ReactBeautifulDnD.Types
 

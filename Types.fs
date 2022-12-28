@@ -3,7 +3,7 @@
 open System
 open Fable.Core
 open Browser.Types
-open Fable.React
+open Feliz
 
 type Position = { x: float; y: float }
 
@@ -67,7 +67,7 @@ type DraggableDescriptor =
       index: float
       // Inherited from Droppable
       droppableId: DroppableId
-      // This is technically redundant but it aunits
+      // This is technically redundant but it units
       // needing to look up a parent droppable just to get its type
       ``type``: TypeId }
 
