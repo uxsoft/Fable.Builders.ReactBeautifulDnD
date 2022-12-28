@@ -39,7 +39,7 @@ let DroppableDiv id' children' =
     Droppable {
         droppableId id'
         children (fun provided snapshot ->
-            Fable.Builders.React.Html.div {                                
+            Fable.Builders.React.Html.Div {                                
                 ref provided.innerRef
                 spread provided.droppableProps
                 
@@ -56,7 +56,7 @@ let DraggableDiv id' index' children' =
         key id'
                 
         children (fun provided snapshot rubric ->         
-            Fable.Builders.React.Html.div {
+            Fable.Builders.React.Html.Div {
                 spread provided.draggableProps
                 spread provided.dragHandleProps
                 ref provided.innerRef
